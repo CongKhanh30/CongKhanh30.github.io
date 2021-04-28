@@ -1,0 +1,84 @@
+
+*{
+    box-sizing: border-box;
+}
+#hinh1{
+    display: flex;
+    height: 400px;
+}
+.red-1{
+    background-color: red;
+    flex: 1;
+}
+.one{
+    flex:0.8;
+    display: flex;
+    flex-direction: column;
+}
+.green-1{
+    background-color: green;
+    flex:1;
+}
+.blue-1{
+    background-color: blue;
+    flex:1;
+}
+#hinh2{
+    display: flex;
+    height: 400px;
+
+}
+.red-2{
+    background-color: red;
+    flex:1;
+    margin-right: 15px;
+}
+.two{
+    flex:0.8;
+    display: flex;
+    flex-direction: column;
+
+}
+.green-2{
+    background-color: green;
+    flex:1;
+}
+.blue-2{
+    background-color: blue;
+    flex:1;
+}
+#hinh3{
+    height: 400px;
+    display: flex;
+}
+.red-3{
+    background-color: red;
+    flex:1;
+}
+.green-3{
+    background-color: green;
+    flex:1;
+}
+.blue-3{
+    background-color: blue;
+    flex:1;
+}
+#hinh4{
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.red-4{
+    background-color: red;
+    flex-basis: 33%;
+    margin-right:15px;
+}
+.green-4{
+    background-color: green;
+    flex-basis: 33%;
+    margin-right:15px;
+}
+.blue-4{
+    background-color: blue;
+    flex-basis: 33%;
+}
