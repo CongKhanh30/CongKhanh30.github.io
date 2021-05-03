@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <Style>
+        .rectangle{
+        background-color: green;
+        width: 200px;
+        height: 200px;
+        }
+       .circle{
+           width: 50px;
+           height: 50px;
+           border-radius: 25px;
+           background-color: brown;
+           position: fixed;
+           left: 20px;
+           top: 20px;
+           /* position: fixed; neo đối tượng theo cửa sổ trình duyệt */
+           z-index: -1;
+           /* sticky neo đối tượng trên hây dưới trang để cuộn cho đối tượng vẫn đứng tại chỗ */
+       }
+       .div-relative{
+           position: relative;
+           left: 100px;
+           top: 500px;
+       }
+       .circle2{
+           width: 50px;
+           height: 50px;
+           border-radius: 25px;
+           background-color:burlywood;
+       }
+       .div-absolute{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+       }
+    </Style>
+</head>
+
+<body>
+    <div class="circle"></div>
+
+    <div class="rectangle div-relative">
+        <div class="circle2 div-absolute"></div>
+    </div>
+
+</body>
+
+</html>

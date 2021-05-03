@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rectangle{
+            width: 100%;
+            height: 400px;
+            background-color: yellow;
+            display: flex;
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+        #top, #bottom{
+            width: 100%;
+            height: 50%;
+        }
+        #left{
+            width: 60%;
+            height:100%;
+
+        }
+        #right{
+            width: 40%;
+            height: 100%;
+        }
+        #rect1{
+            margin-bottom: 15px;
+        }
+        .right_margin{
+            margin-right: 15px;
+        }
+        
+        
+    </style>
+ 
+</head>
+<body>
+    <div id="container">
+        <div id="rect1" class="rectangle">
+            <div id="left" class="red"></div>
+            <div id=right>
+                <div id="top" class="green"></div>
+                <div id="bottom" class="blue"></div>
+            </div>
+        </div>
+        <div id="rect2" class="rectangle">
+            <div id="left" class="red right-margin"></div>
+                <div id=right>
+                    <div id="top" class="green"></div>
+                    <div id="bottom" class="blue"></div>
+                </div>
+            </div>
+        
+
+    </div>
+    
+</body>
+</html>

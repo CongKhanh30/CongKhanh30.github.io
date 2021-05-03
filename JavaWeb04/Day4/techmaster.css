@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.navigation{
+    width: 100%;
+    height: 60px;
+    background-color: #34465c;
+    display: flex;
+    padding-left: 10px;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    height: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 90%;
+}
+.menu{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 20px;
+}
+ul{
+    display: flex;
+    
+}
+li {
+    list-style-type: none;
+    margin: 0 15px;
+}
+.fas{
+    margin-left: 5px;
+}
+    
+.menu-list a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+}
+.avatar{
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.caret{
+    color:white;
+    margin-left:5px;
+    font-size: 18px;
+}
+.menu-list li a:hover{
+    color: grey;
+}
+.menu-list{
+    position: relative;
+}
+.danhmuc{
+    position: absolute;
+    padding-top: 10px;
+    display: none;
+
+}
+.danhmuc li{
+    background-color:gray;
+    padding: 10px 15px;
+}
+.danhmuc li a {
+    margin: 0px;
+}
+.menu-list li:hover .danhmuc{
+    display: block;
+
+}
+#content{
+    width: 100%;
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    color: #464646;
+    margin-left: auto;
+    margin-right: auto;
+}
+.block1{
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    display: flex;
+}
+.col1{
+    flex-basis: 66.67%;
+    padding-right: 15px;
+}
+.col1 img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow:0 1px 4px rgba(0,0,0,0.25);
+    display: block;
+}
+.col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.post{
+    overflow: hidden;
+    display: flex;
+    padding-right: 15px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+    border-radius: 4px;
+    background-color: white;
+    height: 20%;
+}
+.thumbnail img{
+    height: 100%;
+    width: 105px;
+
+}
+.ex a{
+    text-decoration: none;
+    color: #464646;
+
+}
+.ex{
+    height: 100%;
+    width: 276.66px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    text-align: left;
+    position: relative;
+
+}
+.post-title{
+    margin-top: 5px;
+}
+.post-author{
+    font-size: 0.8rem;
+    color: grey;
+    position: absolute;
+    bottom: 10px;
+
+}
+.intro{
+    padding: 20px 20px 0 20px;
+    text-align: center;
+}
+.intro-text{
+    margin top: 15px;
+    color: #464646;
+    font-size: 1rem;
+}
+.intro-des{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #999;
+    width: 70%;
+}
+.block2{
+    padding: 80px 50px 80px 50px;
+    background-color: #E4F2FD;
+
+}
+h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem !important;
+    line-height: 1.2;
+    color: #464646;
+    margin-bottom: 20px;
+}
+.content2nd{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.pit img{
+    width: 100%;
+}
+.pit {
+    flex-basis: 30%;
+    background-color: white;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.25);
+    margin-top: 40px;
+    border-radius:10px;
+    overflow: hidden;
+    text-align:justify;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.tieude {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #464646;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+.noidung{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #464646;
+    font-size: 16px;
+    font-weight: 400;
+}
+.thoigian{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: grey;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.block3{
+    padding: 50px;
+}
+.title3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.title3 i {
+    font-size: 30px;
+    color:#919294;
+}
+.doan{
+    text-align: left;
+    padding-left: 15px;
+    color: #464646;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.2;
+
+}
+.td{
+    padding-left: 15px;
+    color: #464646;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    padding-right: 15px;
+
+}
+.block4{
+    background-color: #E4F2FD;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    
+}
+.footer{
+    background-color:#464646;
+    display: flex;
+    width: 100%;
+}
+.ftcolumn{
+    flex-basis: 25%;
+    text-align: left;
+    color: #919294;
+    margin: 20px;
+
+}
+.ftcolumn a{
+    color: #919294
+}
+.ftcolumn h3{
+    color: white;
+    margin-bottom: 10px;
+}
+.ftcolumn ul{
+    display: flex;
+    flex-direction: column;
+    
+}
+.ftcolumn li{
+    margin: 0;
+    line-height: 2;
+}
+.last{
+    display: flex;
+    width: 60%;
+    justify-content:space-between;
+}
+.messenger{
+    background-color: rgb(0, 132, 255);
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.messenger i{
+    font-size: 40px;
+    color: white;
+}
