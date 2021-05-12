@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 20%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.shadow {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+ul {
+    list-style-type: none;
+}
+
+/ Cho hidden-item an di /
+.hidden-item-1 {
+    color: white;
+    text-align: right;
+}
+
+/ List menu /
+.list-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.list-menu li {
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    line-height: 60px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.list-menu i {
+    width: 10%;
+    height: 60px;
+    line-height: 60px;
+}
+
+.list-menu a {
+    width: 90%;
+    height: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(155, 154, 153);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/ Doi trang thai khi hover qua /
+.list-menu li:hover {
+    background-color: rgb(247, 247, 247);
+}
+
+.list-menu li:hover > a {
+    color: orange;
+}
+
+.list-menu li:hover .hidden-item-1 {
+    color: orange;
+}
