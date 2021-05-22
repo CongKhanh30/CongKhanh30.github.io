@@ -34,7 +34,7 @@ public class App {
     
       int[] intAverArray = new int[]{1, 2, 3, 4};
       System.out.println("Trung bình cộng của một mảng " + math.average(intAverArray));
-                                       
+                                     
       int[] intReverseArray = new int[]{1, 2, 3, 4};
       System.out.print("Mảng đảo chiều là: ");
       System.out.println(math.reverseArray(intReverseArray));

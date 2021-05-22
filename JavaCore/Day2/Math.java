@@ -1,5 +1,3 @@
-
-
 public class Math {
   public boolean isOdd(int x) {//int x là tham số truyền vào, method parameter
     return x % 2 != 0;
