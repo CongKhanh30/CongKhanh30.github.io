@@ -21,7 +21,7 @@ public class App {
                 
             }
         });
-        System.out.println("Danh sach sap xep theo ten");
+        System.out.println("Danh sách sắp xếp theo tên sản phẩm: ");
         show(list);
 
         Collections.sort(list, new Comparator<Product>(){
@@ -33,12 +33,17 @@ public class App {
                 
             }
         });
-        System.out.println("Danh sach sap xep theo so luong ban duoc");
+        System.out.println("Danh sách sắp xếp theo số lượng bán được: ");
         show(list);
 
-        System.out.println("Danh sach san pham co gia tren 1.000.000:");
+        System.out.println("Danh sách sản phẩm có giá trên 1.000.000đ: ");
         list.stream().filter(Product -> Product.getUnitPrice() > 1000000)
-        .forEach(Product -> System.out.println(Product));        
+        .forEach(Product -> System.out.println(Product));     
+        
+        System.out.println("Danh sách sản phẩm và tổng số tiền bán được của từng sản phẩm:");
+        for (Product product : list) {
+            System.out.println(product.getProductName() + ": " + (product.getAmountSales()*product.getUnitPrice()));
+        }
     }
        
     
