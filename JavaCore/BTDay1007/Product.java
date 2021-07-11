@@ -13,6 +13,11 @@ public class Product {
 
     private String description;
 
+    public Product(){
+        
+    }
+
+
     public String getProductId() {
 
         return productId;
