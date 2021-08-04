@@ -9,10 +9,10 @@ public class Repository {
     public List<User> users;
     public List<User> getData(){
         try {
-            FileReader reader = new FileReader("acount.json");
+            FileReader reader = new FileReader("E:\\JavaTech\\CongKhanh30.github.io\\JavaCore\\BaicuaKhanh\\acount.json");
 
             // Chuyển từ JSON text -> object
-            Type objectType = new TypeToken<List<User>>() {
+            Type objectType = new TypeToken <List<User>>() {
             }.getType();
             users = new Gson().fromJson(reader, objectType);
 
