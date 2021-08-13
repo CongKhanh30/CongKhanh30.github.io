@@ -54,23 +54,7 @@ public class BTVNbinarySearch {
         }
         return -1;
     }
-
-    public static int binarySearchRecursive(int[] arr, int key, int left, int right) {
-        if (left <= right) {
-            int m = (left + right) / 2;
-            if (key > arr[m]) {
-                return binarySearchRecursive(arr, key, m + 1, right);
-            }
-            if (key < arr[m]) {
-                return binarySearchRecursive(arr, key, left, m - 1);
-            }
-            if (key == arr[m]) {
-                return m;
-            }
-        }
-        return -1;
-    }
-    public static void main(String[] args) {
+       public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int[] stt = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
